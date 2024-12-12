@@ -1,25 +1,45 @@
+@font-face {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    src: url(./Lato/Lato-Bold.ttf);
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
 h1{
+    position: relative;
     color: #fff;
     font-size: 50px;
-    line-height: 1.3;
+    line-height: 5;
     font-weight: 400px;
 }
 body{
     color: #e3b613;
     background-image: url(images/bg.jpeg);
+    background-repeat: no-repeat;
     height: 100vh;
     position: relative;
     background-size: cover;
     margin: 1;
-    font-family: "Roboto";
-    src: url(./fonts/Roboto-Bold.ttf);
-    font-weight: 700;
+    font-family: "Poppins";
+    font-weight: 400;
 }
+
+main{
+    padding-top: 100px;
+    background-color:#3f8a98;
+}
+
 p{
     font-family: sans-serif;
     line-height: 1.3;
     font-weight: 400;
-    position: fixed;
     top: 50%;
     transform: translateY(-50);
     max-width: 550px;
@@ -31,4 +51,100 @@ p{
 li.activepage a{
     color: black;
 
+}
+body{
+    margin: 0;
+    font-family: poppins, sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+h1 h2 h3 h4 h5{
+    margin: 0;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.menu ul{
+    padding-left: 0;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.menu a{
+    color: #c1c131;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(#3f8a98 50%, #389c7d);
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 2;
+    padding: 15px 0;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Hero{
+    background-image: url(images/bg.jpeg);
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+}
+.Hero .box{
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50);
+     color: #fff;
+     max-width: 550px;
+}
+.Hero .box h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.Hero .box h1{
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 400px;
+}
+.Hero .box p{
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 60px;
+} 
+
+form{
+   padding: 150px 10px;
+}
+
+li.button-wrapper{
+   margin-top: 20px;
+}
+
+@media screen and (max-width: 500px){
+       .menu ul li{
+           display: block;
+       }
+
+    
 }
