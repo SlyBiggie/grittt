@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+             margin: 0;
+             font-family: poppins, sans-serif;
+         }
+         a{
+             color: inherit;
+             text-decoration: none;
+         }
+         h1 h2 h3 h4 h5{
+             margin: 0;
+         }
+         .container{
+             max-width: 1170px;
+             margin: 0 auto;
+         }
+         .menu ul{
+             padding-left: 0;
+         }
+         .menu ul li{
+             list-style: none;
+             display: inline-block;
+             padding: 0 15px;
+         }
+         .menu a{
+             color: #c1c131;
+             font-size: 16px;
+             font-weight: 600;
+         }
+         .btn{
+             font-size: 16px;
+             font-weight: 600;
+             background: linear-gradient(#3f8a98 50%, #389c7d);
+             padding: 10px 25px;
+             border-radius: 20px;
+         }
+
+         header{
+             position: fixed;
+             width: 100%;
+             top: 0%;
+             z-index: 2;
+             padding: 15px 0;
+         }
+
+         .nav{
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+             flex-wrap: wrap;
+         }
+         .Hero{
+             background-image: url(images/bg.jpeg);
+             height: 100vh;
+             position: relative;
+             background-size: cover;
+         }
+         .Hero .box{
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50);
+              color: #fff;
+              max-width: 550px;
+         }
+         .Hero .box h3{
+             text-transform: uppercase;
+             letter-spacing: 2px;
+             margin-bottom: 15px;
+         }
+         .Hero .box h1{
+             font-size: 50px;
+             line-height: 1.3;
+             font-weight: 400px;
+         }
+         .Hero .box p{
+             font-size: 16px;
+             line-height: 1.3;
+             font-weight: 400;
+             margin-bottom: 60px;
+         } 
+         
+         form{
+            padding: 80px 10px;
+         }
+    </style>
+
+      
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="#"> 
+                        <img src="images/logo.png" alt="logo" width="75px">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                            
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="price.html">Price</a>
+                        </li>
+                        <li>
+                            <a href="reviews.html">Reviews</a>
+                        </li>
+                        <li class="activepage">
+                            <a href="getstarted.html" class="btn">Get started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+     </header>
+   <h2> 
+    <form action="/api/contact" method="post" enctype="text/plain">
+        <div>
+            <label for="firstnamefield">Full Name:</label>
+            <input type="text" id="firstnamefield" name="firstname" required>
+        </div>
+
+        <div>
+            <label for="emailfield">Email:
+                <input type="email" id="emailfield" name="email" required>
+            </label>
+        </div>
+        
+        <div>
+            <label for="phonefield">Phone:
+                <input type="tel" id="phonefield" name="phone" required>
+            </label>
+        </div>
+        
+        <div>
+            <label for="datefield">Date of birth:
+                <input type="date" id="datefield" name="date" required>
+            </label>
+        </div> 
+
+        <div>
+            <label for="genderfield">Medlemskap:
+                <input type="radio" id="membership-type" name="membership" value="yearly" required>Årskort
+                <input type="radio" id="membership-type" name="membership" value="monthly" required>Månadskort
+                <input type="radio" id="membership-type" name="membership" value="day" required>Dagskort
+            </label>
+        </div>
+        <!-- 
+        <div>
+            <label for="messagefield">Message:
+                <textarea id="messagefield" name="message" required></textarea>
+            </label>
+        </div> -->
+
+        <div>
+            <label for="checkboxfield">Allmänna villkor:
+                <input type="checkbox" id="checkboxfield" name="allmanna_villkor" required>
+            </label>
+        </div>
+
+        <button a href="congrats.html" type="submit">Skicka</button>
+        
+    </form>
+    </h2>
+<div id="section1">
+
+</div>
+
+<!--<form action="congrats.html" method="get">-->
+    
+</body>
+</html>
